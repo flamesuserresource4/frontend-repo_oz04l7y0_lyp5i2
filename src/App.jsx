@@ -7,7 +7,7 @@ import { Routes, Route } from 'react-router-dom'
 
 export default function App() {
   return (
-    <div className="bg-[#FAF8F6] min-h-screen">
+    <div className="bg-[#FAF8F5] text-[#333333] min-h-screen">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -15,8 +15,8 @@ export default function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <footer className="border-t border-rose-100/80 py-10 text-center text-rose-800/80 bg-white/60 backdrop-blur">
-        <p className="text-sm">© {new Date().getFullYear()} Your Name — Built with care.</p>
+      <footer className="border-t border-[#EADFD8] py-10 text-center bg-white/70 backdrop-blur">
+        <p className="text-sm text-[#333333]/80">© {new Date().getFullYear()} Your Name — Crafted with care.</p>
       </footer>
     </div>
   )
